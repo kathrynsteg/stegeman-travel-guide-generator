@@ -5,7 +5,7 @@ body {
 .container {
   background-color: #fab5f8;
   margin: 90px auto;
-  max-width: 600px;
+  max-width: 800px;
   border: 5px solid #f28fe7;
   border-radius: 10px;
   text-align: center;
@@ -21,18 +21,20 @@ h1 {
   font-weight: 800;
   font-size: 52px;
   line-height: 1.5;
+  margin-top: 48px;
   margin-bottom: 0;
   color: black;
   font-family: "Bebas Neue", sans-serif;
 }
 
 form {
-  padding: 30px;
+  padding: 15px 30px 0px 30px;
   display: flex;
 }
 
 .destination-input {
   padding: 12px;
+  margin-bottom: 0px;
   border: 3px solid #e144c5;
   border-radius: 50px;
   width: 75%;
@@ -50,6 +52,12 @@ form {
   padding: 12px 24px;
   width: 150px;
   font-size: 16px;
+}
+
+.travel-guide {
+  padding: 0px 20px;
+  font-size: 20px;
+  font-weight: 600;
 }
 
 footer {
