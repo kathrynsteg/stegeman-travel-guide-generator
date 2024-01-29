@@ -20,7 +20,7 @@ body {
 h1 {
   font-weight: 800;
   font-size: 52px;
-  line-height: 1.5;
+  line-height: 1;
   margin-top: 48px;
   margin-bottom: 0;
   color: black;
@@ -29,12 +29,12 @@ h1 {
 
 form {
   padding: 15px 30px 0px 30px;
+  margin-bottom: 0px;
   display: flex;
 }
 
 .destination-input {
   padding: 12px;
-  margin-bottom: 0px;
   border: 3px solid #e144c5;
   border-radius: 50px;
   width: 75%;
@@ -45,19 +45,39 @@ form {
 
 .submit-button {
   margin-left: 10px;
-  background-color: black;
+  background-color: #e144c5;
   color: white;
   border: none;
   border-radius: 50px;
-  padding: 12px 24px;
+  padding: 12px 18px;
   width: 150px;
   font-size: 16px;
 }
 
-.travel-guide {
-  padding: 0px 20px;
-  font-size: 20px;
+.submit-button:hover {
+  cursor: pointer;
+  background-color: #e144c5b3;
+  transition-duration: 100ms;
+}
+
+.guide {
+  padding: 0px 24px 16px 24px;
+  font-size: 16px;
   font-weight: 600;
+}
+
+.generating {
+  animation: blink 1.5s linear infinite;
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.3;
+  }
 }
 
 footer {
